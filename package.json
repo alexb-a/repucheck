@@ -1,25 +1,13 @@
 {
   "private": true,
-  "description": "An example project for NextAuth.js with Next.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "https://next-auth-example.vercel.app",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Nico Domino <yo@ndo.dev>",
-    "Lluis Agusti <hi@llu.lu>",
-    "Thang Huu Vu <hi@thvu.dev>"
-  ],
   "dependencies": {
     "@auth/unstorage-adapter": "^2.0.0",
+    "@heroui/react": "^2.7.5",
     "@radix-ui/react-avatar": "^1.0.3",
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-dropdown-menu": "^2.0.5",
@@ -29,9 +17,10 @@
     "@vercel/kv": "^1.0.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "framer-motion": "^12.4.10",
     "lucide-react": "^0.274.0",
-    "next": "latest",
-    "next-auth": "beta",
+    "next": "15.2.1",
+    "next-auth": "v5.0.0-beta.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^1.14.0",

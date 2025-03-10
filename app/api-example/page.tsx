@@ -1,16 +1,16 @@
-"use client"
-import CustomLink from "@/components/custom-link"
-import { useEffect, useState } from "react"
+"use client";
+import CustomLink from "@/components/custom-link";
+import { useEffect, useState } from "react";
 
 export default function Page() {
-  const [data, setData] = useState()
+  const [data, setData] = useState();
   useEffect(() => {
-    ;(async () => {
-      const res = await fetch("/api/protected")
-      const json = await res.json()
-      setData(json)
-    })()
-  }, [])
+    (async () => {
+      const res = await fetch("/api/protected");
+      const json = await res.json();
+      setData(json);
+    })();
+  }, []);
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-3xl font-bold">Route Handler Usage</h1>
@@ -34,5 +34,5 @@ export default function Page() {
         </pre>
       </div>
     </div>
-  )
+  );
 }
